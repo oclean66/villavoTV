@@ -1,5 +1,6 @@
 import React from 'react';
 import ShowServices from '../../Services/ShowServices';
+import {Link} from 'react-router-dom';
 
 class Episodes extends React.Component {
     constructor() {
@@ -20,7 +21,7 @@ class Episodes extends React.Component {
                 {/* <h6>Episodios</h6> */}
                 {this.state.data.episodes && this.state.data.episodes.map(y => {
                     return (<li key={y.id}>
-                        <a href={`/show/${this.props.id}/season/${this.props.sx}/episode/${y.episode_number}`} className="text-truncate">{y.episode_number} - {y.name+" "+y.air_date}</a>
+                        <Link to={`/show/${this.props.id}/imdb/${this.props.imdb}/season/${this.props.sx}/episode/${y.episode_number}`} className="text-truncate">{y.episode_number} - {y.name+" "+y.air_date}</Link>
                     </li>)
                 })
                 }

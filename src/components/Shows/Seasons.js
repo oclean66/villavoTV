@@ -58,7 +58,7 @@ class Seasons extends React.Component {
                                     <div id={"L"+x.id} className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                         <div className="card-body">
                                             {/* {x.overview} */}
-                                            <Episode id={this.state.data.id} sx={x.season_number}/>
+                                            <Episode id={this.state.data.id} sx={x.season_number} imdb={this.props.match.params.imdb}/>
                                         </div>
                                     </div>
                                 </div>)

@@ -46,7 +46,7 @@ class Index extends React.Component {
                             return (<div key={i.show.ids.tmdb} className="card bg-dark">
                                 <img src={i.img} className="card-img-top" alt="..." />
                                 <div className="card-body">
-                                    <h5 className="card-title"><Link to={`/show/${i.show.ids.tmdb}`}>{i.show.ids.tmdb} - {i.show.title}</Link></h5>
+                                    <h5 className="card-title"><Link to={`/show/${i.show.ids.tmdb}/imdb/${i.show.ids.imdb}`}>{i.show.ids.tmdb} - {i.show.title}</Link></h5>
                                     {/* <span className="card-subtitle">{i.episode.title}</span> */}
                                     {/* <p className="card-text d-inline-block text-truncate" style={{ maxWidth: 150 }}>{i.episode.overview}</p> */}
                                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>

@@ -68,8 +68,8 @@ class App extends Component {
                 <Switch>
                   <Route exact path='/' render={props => <Centerpanel addLine={this.addLine}
                     accounts={this.state.accounts} user={this.state.user} />} />
-                  <Route exact path="/show/:id" render={props => <Seasons {...props} />} />
-                  <Route exact path="/show/:id/season/:sx/episode/:ey" render={props => <Watch {...props} />} />
+                  <Route exact path="/show/:id/imdb/:imdb" render={props => <Seasons {...props} />} />
+                  <Route exact path="/show/:id/imdb/:imdb/season/:sx/episode/:ey" render={props => <Watch {...props} />} />
 
 
 
