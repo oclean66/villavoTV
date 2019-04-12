@@ -48,7 +48,10 @@ class Watch extends React.Component {
                     </div>
                 </div>
                 <div className="col-sm-9">
-                    <ReactPlayer ref={this.ref} url='https://c15.vidlox.tv/hls/oudvgh7vbftk2yixv5n6axbgl5xe6cxwqziu4x6yge7aqg4cijm7ap3qtreq/index-v1-a1.m3u8' playing />
+                    <ReactPlayer ref={this.ref} 
+                     width='100%'
+                     height='100%'
+                    url='https://c15.vidlox.tv/hls/oudvgh7vbftk2yixv5n6axbgl5xe6cxwqziu4x6yge7aqg4cijm7ap3qtreq/index-v1-a1.m3u8' playing />
                 </div>
 
 
