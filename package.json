@@ -5,7 +5,12 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-player": "^1.11.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "screenfull": "^4.2.0",
+    "trakt.tv": "^7.1.0",
+    "trakt.tv-images": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,5 +26,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "electron": "^4.1.4"
+  }
 }

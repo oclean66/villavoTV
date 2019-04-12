@@ -1,0 +1,126 @@
+.open-button {
+     background-color: #0d1920;
+     background-color: #0cd664;
+    /*color: white;
+    padding: 16px 20px;
+    border: none; */
+    cursor: pointer;
+    border-top: 3px solid #f1f1f1;
+    /* opacity: 0.8; */
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    width: 300px;
+    /* box-shadow: 4px 3px 20px 0px #ffffff; */
+  }
+  .chat-title{  background-color: #0cd664;  cursor: pointer;}
+  
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    transition:  all .25s ease-in-out 0ms;
+    position: fixed;
+    max-height: calc(100% - 20px);
+    /* max-height: 555px; */
+    transition: all 0.5s ease;
+    /* height: 250px; */
+    bottom: 0;
+    right: 10px;
+    border: 2px solid #0d1920;
+    background-color: #0d1920;
+    border-top:3px solid #cccccc;
+    z-index: 9;
+  }
+  .picklist{ max-height: 360px;}
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #0d1920;
+  }
+  
+  /* Full-width textarea */
+  .form-container .picklist {
+    width: 300px;
+    /* padding: 15px; */
+    margin: 0px 0 15px 0;
+    /* border: none; */
+    background: #0d1920;
+    /* resize: none; */
+    min-height: calc(100% - 294px);
+  }
+  /* .stake:focus{
+      border: #0cd664 !important;
+      outline: #0cd664 auto 5px;
+  } */
+  .button-special.del{
+    flex: none;
+    z-index: 1;
+    width: 36px;
+    height: 32px;
+    min-width: 32px;
+    max-width: 36px;
+  }
+  .list-group-item {
+    background-color: #0d1920;
+    color: #0cd664;
+    border: none;
+    border-bottom: #0cd664 1px solid;
+    margin-bottom: 0;
+  }
+  .list-group-item-action:focus, .list-group-item-action:hover{
+    background-color: #0d1920;
+    color: #4CAF50;
+  }
+  /* When the textarea gets focus, do something */
+  .form-container .picklist:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .widget-footer{
+    background-color: #050a0c;
+    /* position: absolute; */
+    /* bottom: 10px; */
+    /* width: 100%; */
+    margin: -10px;
+    padding: 10px;
+  }
+
+  .picklist::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+.picklist::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.picklist::-webkit-scrollbar-thumb {
+  background-color: #548d6196;
+  outline: 1px solid slategrey;
+}
+
+  /* Set a style for the submit/send button */
+  /* .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  } */
+  
+  /* Add a red background color to the cancel button */
+  /* .form-container .cancel {
+    background-color: red;
+  }
+   */
+  /* Add some hover effects to buttons */
+  /* .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  } */
+  .open-button:hover, .chat-title:hover{
+      background-color: #4CAF50;
+  }
